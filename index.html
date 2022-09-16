@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js" integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Padrão
+    </p>
+    <article>
+        <div data-tilt class="tilt">
+            <p>Teste de vanilla</p>
+        </div>
+    </article>
+    <p>
+        Reverso
+    </p>
+    <article>
+        <div data-tilt class="tilt" data-tilt-reverse="true">
+            <p>Teste de vanilla</p>
+        </div>
+    </article>
+    <p>
+        Com efeito de vidro
+    </p>
+    <article>
+        <div data-tilt class="tilt" data-tilt-glare data-tilt-max-glare="0.8"  id="glass">
+            <p>Teste de vanilla</p>
+        </div>
+    </article>
+    <p>
+        Com efeito 3d
+    </p>
+    <article>
+        <div data-tilt class="tilt d3">
+            <p class="elem3d">Teste de vanilla</p>
+        </div>
+    </article>
+    <p>
+        aumenta quando o mouse entra
+    </p>
+    <article>
+        <div data-tilt data-tilt-scale="1.1" class="tilt escala">
+            <p class="">Teste de vanilla</p>
+        </div>
+    </article>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".tilt"));
+    </script>
+</body>
+</html>
